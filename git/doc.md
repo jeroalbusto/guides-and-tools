@@ -122,3 +122,39 @@ git branch -D <name_Branch>
 ```
 
 ---
+
+### git checkout
+
+cambiar de branch o rama:
+```bash
+git checkout <name_branch>
+```
+Crear una nueva rama y cambiar a ella:
+```bash
+git checkout -b <name_branch>
+```
+
+---
+
+### otros comandos
+
+Une el branch actual con el especificado:
+```bash
+git merge <name_Branch>
+```
+se utiliza para fusionar cambios de una rama a otra en Git. Básicamente, toma los cambios que se han realizado en una rama y los integra en otra rama.es una operación fundamental en Git y se utiliza comúnmente para integrar cambios de diferentes ramas, como por ejemplo, fusionar una rama de características con la rama principal del proyecto.
+
+
+
+Verifica cambios en el repositorio online o remoto con el local:
+```bash
+git fetch <repositorio_remoto>
+```
+este comando recupera todo del repositorio remoto que aún no están presentes en tu repositorio local. Sin embargo, no realiza una fusión (merge) de estos cambios con tus ramas locales ni modifica tu directorio de trabajo.Esto significa que puedes inspeccionar los cambios antes de fusionarlos, lo que te permite revisar los cambios antes de incorporarlos a tu rama local.
+
+Busca los cambios nuevos y actualiza el repositorio:
+```bash
+git pull origin <name_Branch>
+```
+se utiliza para recuperar los cambios desde un repositorio remoto y fusionarlos con la rama local actual. Básicamente, realiza dos operaciones en una sola (git fetch, git merge).
+Es útil para mantener tu repositorio local actualizado con los últimos cambios realizados en el repositorio remoto y para sincronizar tu trabajo con el de otros colaboradores del proyecto.
