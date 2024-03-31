@@ -158,3 +158,9 @@ git pull origin <name_Branch>
 ```
 se utiliza para recuperar los cambios desde un repositorio remoto y fusionarlos con la rama local actual. Básicamente, realiza dos operaciones en una sola (git fetch, git merge).
 Es útil para mantener tu repositorio local actualizado con los últimos cambios realizados en el repositorio remoto y para sincronizar tu trabajo con el de otros colaboradores del proyecto.
+
+Eliminar el directorio .git, el directorio .git es donde Git almacena toda la información sobre el historial de versiones, las configuraciones y demás. Eliminar este directorio borrará toda la información de Git en ese directorio y sus subdirectorios. Puedes hacerlo con el siguiente comando en la línea de comandos:
+```bash
+rm -rf .git
+```
+Este comando eliminará de forma recursiva y forzada (-rf) el directorio .git y todo su contenido. Ten en cuenta que este comando es irreversible y eliminará permanentemente el historial de versiones y la configuración de Git en ese directorio y sus subdirectorios.
