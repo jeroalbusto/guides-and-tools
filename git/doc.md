@@ -101,3 +101,24 @@ git log --oneline --graph
 ```
 
 ---
+
+### git branch
+
+Crear un branch o rama:
+```bash
+git branch <name_Branch>
+```
+Lista los branches o ramas:
+```bash
+git branch
+```
+Comando -d elimina el branch y lo une al master:
+```bash
+git branch -d <name_Branch>
+```
+Elimina sin preguntar branch:
+```bash
+git branch -D <name_Branch>
+```
+
+---
