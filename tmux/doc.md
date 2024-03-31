@@ -13,6 +13,13 @@ se instala en linux con el comando:
 sudo apt-get install tmux
 ```
 
+podemos comprobarlo con el comando:
+```bash
+tmux -V
+```
+Si tmux está instalado, verás la versión instalada impresa en la terminal
+
+
 ### Comandos
 
 Se puede iniciar tmux de dos maneras:
