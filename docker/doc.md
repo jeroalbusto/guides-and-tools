@@ -73,3 +73,39 @@ sudo docker-compose logs
 ---
 
 ### comandos de docker
+
+La principal caracteristica de docker es usar imagenes, estas imagenes se pueden crear o usar imagenes ya creadas y registradas en [Dockerhub](https://hub.docker.com). Docker crea o construye imagenes apartir de un archivos Dockerfile
+
+Para crear y ejecutar un contenedor a partir de una imagen Docker. Se usa:
+```bash
+sudo docker run nombre_de_la_imagen
+```
+Para construir una imagen Docker a partir de un archivo Dockerfile. Se usa:
+```bash
+sudo docker build -t nombre_de_la_imagen ruta_del_Dockerfile
+```
+Para descargar una imagen Docker desde un registro. Se usa:
+```bash
+sudo docker pull nombre_de_la_imagen
+```
+Para ver las imagenes que tenes, se usa:
+```bash
+sudo docker images
+```
+Para eliminar uno o varios contenedores. Se usa:
+```bash
+sudo docker rm nombre_del_contenedor o id
+```
+Para eliminar una imagen Docker. Se usa:
+```bash
+sudo docker rmi nombre_de_la_imagen o id
+```
+Para ejecutar comandos dentro de un contenedor en ejecución. Se usa:
+```bash
+sudo docker exec -it nombre_del_contenedor bash
+``` 
+
+Para mostrar los logs de un contenedor específico. Se usa:
+```bash
+docker logs nombre_del_contenedor
+```
