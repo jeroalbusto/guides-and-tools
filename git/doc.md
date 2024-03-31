@@ -42,6 +42,11 @@ Clonamos un repositorio de github o gitlab:
 git clone <url>
 ```
 
+Lista un estado actual del repositorio con lista de archivos modificados o agregados:
+```bash
+git status
+```
+
 Añadimos todos los archivos para el commit:
 ```bash
 git add .
@@ -56,3 +61,43 @@ Subimos al repositorio:
 ```bash
 git push -u origin master
 ```
+
+---
+
+### git add
+
+Añadimos un archivo para el commit:
+```bash
+git add <archivo>
+```
+Añadimos todos los archivos con la extensión especificada:
+```bash
+git add *.txt
+```
+
+---
+
+### git push
+
+Subimos al repositorio:
+```bash
+git push origin <rama>
+```
+
+---
+
+### git log
+Muestra los logs de los commits:
+```bash
+git log
+```
+Muestras los cambios en los commits:
+```bash
+git log --oneline --stat
+```
+Muestra graficos de los commits:
+```bash
+git log --oneline --graph
+```
+
+---
