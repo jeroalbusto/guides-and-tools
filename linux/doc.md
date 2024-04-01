@@ -54,11 +54,11 @@ Mostrar la ruta del directorio actual:
 ```bash
 pwd
 ```
-moverse o cambiar de directorio
+Moverse o cambiar de directorio
 ```bash
 cd nombre_directorio
 ```
-volver un directorio o dos
+Volver un directorio o dos
 ```bash
 cd ..
 
@@ -75,4 +75,40 @@ ls -l
 Listar los archivos y directorios en el directorio actual, y los ocultos
 ```bash
 ls -a
+```
+Crear un directorio
+```bash
+mkdir nombre_directorio
+```
+Crear un archivo vacio
+```bash
+touch nombre_archivo
+```
+Actualizar la fecha de modificacion de un archivo existente
+```bash
+touch -t año-mes-día-hora-minuto nombre_archivo
+```
+Mostrar el contenido de un archivo
+```bash
+cat nombre_archivo
+```
+Copiar archivos o directorios
+```bash
+cp nombre destino
+```
+Mover archivos o directorios
+```bash
+mv nombre destino
+```
+Eliminar archivos
+```bash
+rm nombre_archivo
+```
+Eliminar directorio vacio
+```bash
+rmdir nombre_directorio
+```
+Eliminar directorio y su contenido
+```bash
+rm -r nombre_directorio
 ```
