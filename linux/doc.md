@@ -47,6 +47,19 @@ Esto mostrará la versión de curl instalada en tu sistema, lo que confirma que 
 
 ---
 
+### Instalar archivos .deb
+
+ Una vez que hayas descargado el archivo .deb, puedes instalarlo usando el comando APT. Abre una terminal y navega hasta la ubicación donde descargaste el archivo .deb, luego ejecuta el siguiente comando:
+ ```bash
+ sudo apt-get install ./nombre_archivo.deb
+ ```
+ Para desinstalar un paquete .deb con APT:
+ ```bash
+ sudo apt-get remove nombre_archivo
+ ```
+
+---
+
 ### Comandos Basicos de la Terminal
 
 
@@ -194,3 +207,4 @@ nombre_comando --help
  ```bash
  sudo apt-get install cmatrix
  ```
+ 
