@@ -31,7 +31,7 @@ chsh -s $(which fish)
 
 ---
 
-## Curl
+### Curl
 
 Curl es una herramienta de línea de comandos y una biblioteca de transferencia de datos utilizada para transferir datos a través de varios protocolos. Puede manejar protocolos como HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, DICT, TELNET, FILE, IMAP, SMTP, POP3, RTSP y otros. Se usa para descargar archivos desde internet.
 
@@ -141,6 +141,11 @@ Mostrar el espacio en disco disponible
 ```bash
 df
 ```
+Mostrar información en un formato más legible para humanos, mostrando los tamaños en unidades más fáciles de entender (por ejemplo, KB, MB, GB)
+```bash
+df -h
+```
+
 Mostrar el uso del disco de archivos y directorios
 ```bash
 du
@@ -166,3 +171,26 @@ man nombre_comando
 
 nombre_comando --help
 ```
+
+---
+
+### Utilidades
+
+ El comando tree es una utilidad comúnmente utilizada para visualizar la estructura de directorios de forma jerárquica
+ ```bash
+ tree
+ ```
+ Este comando mostrará la estructura de directorios del directorio actual.
+
+ Es probable que tengas que descargar el comando
+ ```bash
+ sudo apt-get install tree
+ ```
+ Crear el efecto de "lluvia de caracteres" estilo Matrix, similar al visto en la película "The Matrix". Este comando es una especie de pantalla de inicio interactiva que se ejecuta en la terminal de Unix/Linux.
+ ```bash
+ cmatrix
+ ```
+ Es probable que tengas que descargar el comando
+ ```bash
+ sudo apt-get install cmatrix
+ ```
