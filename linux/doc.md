@@ -112,3 +112,57 @@ Eliminar directorio y su contenido
 ```bash
 rm -r nombre_directorio
 ```
+Cambiar los permisos de un archivo o directorio
+```bash
+chmod permisos nombre_archivo
+```
+Puedes especificar los permisos simbólicamente utilizando las letras u (propietario), g (grupo) y o (otros), junto con los operadores + (añadir permisos), - (eliminar permisos) y = (establecer permisos).
+
+- Lectura (r)
+- Escritura (w)
+- Ejecución (x)
+
+Por ejemplo, para dar permisos de escritura al grupo y otros, puedes usar:
+```bash
+chmod go+w archivo
+```
+Crear o extraer archivos comprimidos
+```bash
+tar -cvf archivo.tar directorio (crear un archivo)
+
+tar -xvf archivo.tar (extraer un archivo)
+```
+Listar el contenido de un archivo tar
+```bash
+tar -tvf archivo.tar
+```
+
+Mostrar el espacio en disco disponible 
+```bash
+df
+```
+Mostrar el uso del disco de archivos y directorios
+```bash
+du
+```
+Mostrar la ruta del archivo ejecutable de un programa
+```bash
+which nombre_programa
+``` 
+Terminar un proceso
+```bash
+kill PID_proceso
+```
+kill enviara una señal al proceso identificado por su PID (Identificador de Proceso), lo que solicitará al proceso que termine su ejecución de manera suave.
+
+Forzar la terminacion de un proceso
+```bash
+kill -9 PID_proceso
+```
+
+Puedes explorar más comandos tilizando la opción de ayuda de cada comando
+```bash
+man nombre_comando
+
+nombre_comando --help
+```
