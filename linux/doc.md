@@ -62,8 +62,13 @@ Esto mostrará la versión de curl instalada en tu sistema, lo que confirma que 
 
 ### Comandos Basicos de la Terminal
 
+Para limpiar la pantalla de la terminal, eliminando cualquier texto o salida que esté presente
+```bash
+clear
+```
+Otra alternativa es el comando Ctrl + L (tecla Control más la letra "L") es un atajo de teclado que también se utiliza para limpiar la pantalla de la terminal, similar al comando clear. En la mayoría de las terminales, al presionar Ctrl + L, se borra el contenido de la pantalla y se desplaza hacia arriba, dejando una ventana de visualización limpia.
 
-Mostrar la ruta del directorio actual:
+Mostrar la ruta del directorio actual
 ```bash
 pwd
 ```
@@ -207,4 +212,15 @@ nombre_comando --help
  ```bash
  sudo apt-get install cmatrix
  ```
- 
+
+ ---
+
+ ### Editor de texto
+
+ #### nano
+ Nano es un editor de texto simple y fácil de usar que es ideal para usuarios principiantes.Tiene una interfaz intuitiva y es más fácil de aprender que Vim o Emacs.
+
+ Para abrir un archivo con Nano, simplemente escribe nano seguido del nombre del archivo en la terminal y presiona Enter. Esto abrirá el archivo en Nano, donde puedes comenzar a editar. Para guardar los cambios y salir, presiona Ctrl + o para guardar y Ctrl + x para salir.
+ ```bash
+ nano nombre_archivo
+ ```
